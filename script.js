@@ -70,7 +70,7 @@ img :"https://upload.wikimedia.org/wikipedia/fr/d/d9/Logo_Ligue_1_2024.svg" ,
 }
 ]
 
-
+ 
 clubs.forEach((club)=>{
     var div=document.createElement("div");
     div.className="club-item";
