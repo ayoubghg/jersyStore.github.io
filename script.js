@@ -41,13 +41,36 @@ let clubs=[{
     },
     
 ];
-// let leagues=[
-//                 {
-//                     name:"",
-//                     img:"",
-//                     link:""
-//                 }
-// ]
+let leagues=[
+   { 
+    name:"Premier League",
+    link:"",
+    img:"https://upload.wikimedia.org/wikipedia/ar/7/72/Premier_league_logo.svg"
+},{
+    name:"La Liga",
+    link:"",
+    img:"https://upload.wikimedia.org/wikipedia/commons/0/0f/LaLiga_logo_2023.svg",
+
+},{
+    name:"Serie A",
+    link:"",
+    img:"https://upload.wikimedia.org/wikipedia/ar/b/bf/Serie_A_TIM_-_Logo_%282019%29.svg",
+},
+{name:"Bundesliga",
+link:"",
+img:"https://upload.wikimedia.org/wikipedia/ar/d/df/Bundesliga_logo_%282017%29.svg",
+},
+{name:"Brasileirão",
+link:"",
+img:"https://upload.wikimedia.org/wikipedia/ar/3/33/Brasileir%C3%A3o.svg",
+},
+{name:"Ligue 1",
+link:"",
+img :"https://upload.wikimedia.org/wikipedia/fr/d/d9/Logo_Ligue_1_2024.svg" ,
+}
+]
+
+
 clubs.forEach((club)=>{
     var div=document.createElement("div");
     div.className="club-item";
@@ -55,4 +78,12 @@ clubs.forEach((club)=>{
 
     
 document.getElementsByClassName("club-container")[0].appendChild(div);
+})
+leagues.forEach((league)=>{
+    var div=document.createElement("div");
+    div.className="league";
+    div.innerHTML=`<a href=${league.link}><img src=${league.img}> </div> <span>${league.name}</span></a></div>`;
+
+    
+document.getElementsByClassName("leagues")[0].appendChild(div);
 })
