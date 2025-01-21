@@ -79,6 +79,7 @@ header {
     position:sticky;
     flex-direction: row;
     justify-content: space-around;
+    top:0;
     align-items: center;
     padding: 20px;
 }
